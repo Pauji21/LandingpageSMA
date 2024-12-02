@@ -1,0 +1,222 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Perbandingan SMA vs SMK</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <style>
+          body {
+              font-family: 'Poppins', sans-serif;
+              background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          }
+          .comparison-card {
+              transition: all 0.3s ease-in-out;
+              margin: 20px 0;
+              background: rgba(255, 255, 255, 0.9);
+              border: none;
+              border-radius: 15px;
+          }
+          .comparison-card:hover {
+              transform: scale(1.05);
+              box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+          }
+          .header-section {
+              background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3');
+              background-size: cover;
+              color: white;
+              padding: 100px 0;
+              animation: gradientBG 10s ease infinite;
+          }
+          .feature-icon {
+              font-size: 2.5rem;
+              margin-bottom: 15px;
+              color: #0d6efd;
+              animation: bounce 2s infinite;
+          }
+          .card-title {
+              color: #2c3e50;
+              transition: color 0.3s;
+          }
+          .card:hover .card-title {
+              color: #3498db;
+          }
+          .btn-primary {
+              background: linear-gradient(45deg, #2193b0, #6dd5ed);
+              border: none;
+              transition: transform 0.3s, box-shadow 0.3s;
+          }
+          .btn-primary:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+              background: linear-gradient(45deg, #6dd5ed, #2193b0);
+          }
+          .table {
+              animation: fadeIn 1s ease-in;
+          }
+          .table-primary {
+              background: linear-gradient(45deg, #4e54c8, #8f94fb);
+              color: white;
+          }
+          @keyframes bounce {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-10px); }
+          }
+          @keyframes gradientBG {
+              0% { background-position: 0% 50%; }
+              50% { background-position: 100% 50%; }
+              100% { background-position: 0% 50%; }
+          }
+          @keyframes fadeIn {
+              from { opacity: 0; transform: translateY(20px); }
+              to { opacity: 1; transform: translateY(0); }
+          }
+          .list-unstyled li {
+              transition: transform 0.2s;
+              padding: 5px;
+          }
+          .list-unstyled li:hover {
+              transform: translateX(10px);
+              color: #3498db;
+          }
+          footer {
+              background: linear-gradient(45deg, #141e30, #243b55);
+              animation: fadeIn 1s ease-in;
+          }
+      </style>
+  </head>
+  <body>
+      <!-- Header Section -->
+      <div class="header-section text-center animate__animated animate__fadeIn">
+          <div class="container">
+              <h1 class="display-4 animate__animated animate__slideInDown">SMA vs SMK</h1>
+              <p class="lead animate__animated animate__slideInUp">Panduan Lengkap Memilih Jalur Pendidikan yang Tepat</p>
+          </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="container my-5">
+          <!-- Introduction -->
+          <div class="text-center mb-5 animate__animated animate__fadeIn">
+              <h2>Pilihan Masa Depan Anda</h2>
+              <p class="lead">Bandingkan dan pilih jalur pendidikan yang sesuai dengan minat dan bakat Anda</p>
+          </div>
+
+          <!-- Comparison Cards -->
+          <div class="row">
+              <!-- SMA Card -->
+              <div class="col-md-6 animate__animated animate__fadeInLeft">
+                  <div class="card comparison-card shadow">
+                      <div class="card-body text-center">
+                          <h3 class="card-title">SMA (Sekolah Menengah Atas)</h3>
+                          <div class="feature-icon">🎓</div>
+                          <h4>Keunggulan:</h4>
+                          <ul class="list-unstyled">
+                              <li>✅ Fokus pada pendidikan akademis</li>
+                              <li>✅ Persiapan optimal untuk kuliah</li>
+                              <li>✅ Pembelajaran teori yang mendalam</li>
+                              <li>✅ Fleksibilitas pilihan jurusan kuliah</li>
+                          </ul>
+                          <h4>Program Unggulan:</h4>
+                          <ul class="list-unstyled">
+                              <li>📚 IPA (MIPA)</li>
+                              <li>📚 IPS</li>
+                              <li>📚 Bahasa</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- SMK Card -->
+              <div class="col-md-6 animate__animated animate__fadeInRight">
+                  <div class="card comparison-card shadow">
+                      <div class="card-body text-center">
+                          <h3 class="card-title">SMK (Sekolah Menengah Kejuruan)</h3>
+                          <div class="feature-icon">⚙️</div>
+                          <h4>Keunggulan:</h4>
+                          <ul class="list-unstyled">
+                              <li>✅ Keterampilan praktis</li>
+                              <li>✅ Siap kerja setelah lulus</li>
+                              <li>✅ Program magang industri</li>
+                              <li>✅ Sertifikasi keahlian</li>
+                          </ul>
+                          <h4>Jurusan Populer:</h4>
+                          <ul class="list-unstyled">
+                              <li>🔧 Teknik Komputer dan Jaringan</li>
+                              <li>🎨 Multimedia</li>
+                              <li>💼 Akuntansi</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="table-responsive mt-5 animate__animated animate__fadeIn">
+              <table class="table table-bordered">
+                  <thead class="table-primary">
+                      <tr>
+                          <th>Aspek</th>
+                          <th>SMA</th>
+                          <th>SMK</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Fokus Pembelajaran</td>
+                          <td>Teori dan akademis</td>
+                          <td>Praktik dan keterampilan</td>
+                      </tr>
+                      <tr>
+                          <td>Prospek Setelah Lulus</td>
+                          <td>Melanjutkan ke perguruan tinggi</td>
+                          <td>Siap kerja atau kuliah</td>
+                      </tr>
+                      <tr>
+                          <td>Kurikulum</td>
+                          <td>Mata pelajaran umum</td>
+                          <td>Mata pelajaran kejuruan</td>
+                      </tr>
+                      <tr>
+                          <td>Pengalaman Praktik</td>
+                          <td>Terbatas</td>
+                          <td>Ekstensif</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="text-center mt-5 animate__animated animate__fadeIn">
+              <h3>Masih Bingung?</h3>
+              <p>Tonton video penjelasan kami:</p>
+              <div class="ratio ratio-16x9 mb-4" style="max-width: 560px; margin: 0 auto;">
+                <iframe 
+                src="https://www.youtube.com/embed/rXxUBm2mSqo" 
+                title="Video Example" 
+                width="560" 
+                height="315" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+              
+              
+              </div>
+              <p>Konsultasikan dengan guru BK atau orangtua untuk memilih jalur pendidikan yang tepat</p>
+              <a href="contact.html" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">Hubungi Kami</a>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-dark text-white py-4 mt-5">
+          <div class="container text-center">
+              <p>uswatun Hasanah</p>
+          </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
